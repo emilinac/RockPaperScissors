@@ -38,6 +38,17 @@ transform: rotate(90deg);
     margin-top: 1.5rem;
 
 }
-.option_images img{
+.option_image img{
     width: 50px;
+}
+.option_images{
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+}
+.option_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
