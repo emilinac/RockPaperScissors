@@ -18,6 +18,26 @@ body{
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
+.result_images {
+    display: flex;
+    column-gap: 7rem;
+}
 .result_images img{
     width: 100px;
+}
+.user_result img{
+transform: rotate(90deg);
+}
+.cpu_result img{
+    transform: rotate(-90deg) rotateY(180deg);
+}
+.result{
+    text-align: center;
+    font-size: 2rem;
+    color: #131313;
+    margin-top: 1.5rem;
+
+}
+.option_images img{
+    width: 50px;
 }
