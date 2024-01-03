@@ -22,6 +22,14 @@ body{
     display: flex;
     column-gap: 7rem;
 }
+.container.start .user_result{
+    animation: userShake 0.7s ease infinite;
+}
+@keyframes userShake {
+    50%{
+        transform: translateY(10px);
+    }
+}
 .result_images img{
     width: 100px;
 }
@@ -53,6 +61,9 @@ transform: rotate(90deg);
     transition: opacity 0.3s ease;
 }
 .option_image:hover{
+    opacity: 1;
+}
+.option_image:active{
     opacity: 1;
 }
 .option_image img{
