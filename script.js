@@ -8,6 +8,8 @@ optionImages.forEach((image,index) => {
     image.addEventListener("click",(e) => {
         image.classList.add("active");
 
+        userResult.src = cpuResult.src = "images/rock.png";
+        result.textContent = "Wait..."
 
         // Loop through each option image again
         optionImages.forEach((image2,index2) => {
