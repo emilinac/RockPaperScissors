@@ -13,20 +13,20 @@ optionImages.forEach((image,index) => {
 
         // Loop through each option image again
         optionImages.forEach((image2,index2) => {
-            // If the curent imdex doesnt match teh clicked index remove the "active" class 
+            // If the current index doesn't match teh clicked index remove the "active" class
             index !== index2 && image2.classList.remove("active");
         });
 
         gameContainer.classList.add("start")
 
-        // Set a timeou to delay the results
+        // Set a timeout to delay the results
         let time = setTimeout(()=> {
             gameContainer.classList.remove("start")
             // Getting the source of the clicked option
             let imageSrc = e.target.querySelector("img").src;
             // Setting the user image input to the clicked option
             userResult.src = imageSrc;
-            // Gemerate a random number between 0 and 2
+            // Generate a random number between 0 and 2
             let randomNumber = Math.floor(Math.random() * 3);
 
             // Creating an array for the CPU image options
@@ -40,13 +40,13 @@ optionImages.forEach((image,index) => {
             // Create an object with all possible outcomes
             let outcomes = {
                 RR:"Draw",
-                RP:"Cpu",
+                RP:"CPU",
                 RS:"User",
                 PP:"Draw",
                 PR:"User",
-                PS:"Cpu",
+                PS:"CPU",
                 SS:"Draw",
-                SR:"Cpu",
+                SR:"CPU",
                 SP:"User"
             };
 
